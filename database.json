@@ -1,0 +1,202 @@
+[
+    {
+        "question": "Apa ibu kota Indonesia?",
+        "incorrect_answers": ["Bandung", "Surabaya", "Medan"],
+        "correct_answer": "Jakarta"
+    },
+    {
+        "question": "Siapa presiden pertama Indonesia?",
+        "incorrect_answers": ["Soeharto", "BJ Habibie", "Megawati"],
+        "correct_answer": "Soekarno"
+    },
+    {
+        "question": "Berapa hasil dari 7 + 8?",
+        "incorrect_answers": ["12", "14", "16"],
+        "correct_answer": "15"
+    },
+    {
+        "question": "Gunung tertinggi di dunia adalah?",
+        "incorrect_answers": ["Gunung Kilimanjaro", "Gunung Elbrus", "Gunung Denali"],
+        "correct_answer": "Gunung Everest"
+    },
+    {
+        "question": "Sungai terpanjang di dunia adalah?",
+        "incorrect_answers": ["Sungai Amazon", "Sungai Yangtze", "Sungai Mississippi"],
+        "correct_answer": "Sungai Nil"
+    },
+    {
+        "question": "Siapa penemu lampu pijar?",
+        "incorrect_answers": ["Nikola Tesla", "Alexander Graham Bell", "Michael Faraday"],
+        "correct_answer": "Thomas Edison"
+    },
+    {
+        "question": "Benua terbesar di dunia adalah?",
+        "incorrect_answers": ["Afrika", "Amerika Utara", "Eropa"],
+        "correct_answer": "Asia"
+    },
+    {
+        "question": "Di mana letak Menara Eiffel?",
+        "incorrect_answers": ["London", "Roma", "Berlin"],
+        "correct_answer": "Paris"
+    },
+    {
+        "question": "Siapa ilmuwan yang mengemukakan teori relativitas?",
+        "incorrect_answers": ["Isaac Newton", "Galileo Galilei", "Stephen Hawking"],
+        "correct_answer": "Albert Einstein"
+    },
+    {
+        "question": "Apa nama satelit alami Bumi?",
+        "incorrect_answers": ["Mars", "Venus", "Titan"],
+        "correct_answer": "Bulan"
+    },
+    {
+        "question": "Siapa penulis novel 'Laskar Pelangi'?",
+        "incorrect_answers": ["Dewi Lestari", "Ahmad Fuadi", "Pidi Baiq"],
+        "correct_answer": "Andrea Hirata"
+    },
+    {
+        "question": "Apa mata uang resmi Jepang?",
+        "incorrect_answers": ["Won", "Dolar", "Peso"],
+        "correct_answer": "Yen"
+    },
+    {
+        "question": "Negara mana yang memiliki piramida terkenal?",
+        "incorrect_answers": ["Meksiko", "Peru", "India"],
+        "correct_answer": "Mesir"
+    },
+    {
+        "question": "Berapa jumlah provinsi di Indonesia pada tahun 2024?",
+        "incorrect_answers": ["30", "34", "36"],
+        "correct_answer": "38"
+    },
+    {
+        "question": "Apa hewan darat tercepat di dunia?",
+        "incorrect_answers": ["Singa", "Serigala", "Kuda"],
+        "correct_answer": "Cheetah"
+    },
+    {
+        "question": "Siapa pelukis yang terkenal dengan lukisan 'Mona Lisa'?",
+        "incorrect_answers": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+        "correct_answer": "Leonardo da Vinci"
+    },
+    {
+        "question": "Di mana letak Tembok Besar China?",
+        "incorrect_answers": ["India", "Jepang", "Korea Selatan"],
+        "correct_answer": "China"
+    },
+    {
+        "question": "Apa planet terbesar di tata surya?",
+        "incorrect_answers": ["Mars", "Bumi", "Saturnus"],
+        "correct_answer": "Jupiter"
+    },
+    {
+        "question": "Apa ibukota Australia?",
+        "incorrect_answers": ["Sydney", "Melbourne", "Brisbane"],
+        "correct_answer": "Canberra"
+    },
+    {
+        "question": "Siapa penulis naskah proklamasi kemerdekaan Indonesia?",
+        "incorrect_answers": ["Sutan Sjahrir", "Mohammad Hatta", "Ki Hadjar Dewantara"],
+        "correct_answer": "Achmad Soebardjo"
+    },
+    {
+        "question": "Apa simbol kimia untuk air?",
+        "incorrect_answers": ["O2", "CO2", "H2"],
+        "correct_answer": "H2O"
+    },
+    {
+        "question": "Siapa penemu telepon?",
+        "incorrect_answers": ["Nikola Tesla", "Thomas Edison", "Albert Einstein"],
+        "correct_answer": "Alexander Graham Bell"
+    },
+    {
+        "question": "Negara mana yang memiliki menara miring terkenal?",
+        "incorrect_answers": ["Prancis", "Spanyol", "Jerman"],
+        "correct_answer": "Italia"
+    },
+    {
+        "question": "Apa hewan yang dapat hidup di darat dan air?",
+        "incorrect_answers": ["Reptil", "Ikan", "Serangga"],
+        "correct_answer": "Amfibi"
+    },
+    {
+        "question": "Siapa ilmuwan yang menemukan gaya gravitasi?",
+        "incorrect_answers": ["Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+        "correct_answer": "Isaac Newton"
+    },
+    {
+        "question": "Apa nama alat musik tradisional dari Indonesia yang dimainkan dengan cara dipukul?",
+        "incorrect_answers": ["Sasando", "Kecapi", "Seruling"],
+        "correct_answer": "Gamelan"
+    },
+    {
+        "question": "Di planet mana manusia tinggal?",
+        "incorrect_answers": ["Mars", "Venus", "Jupiter"],
+        "correct_answer": "Bumi"
+    },
+    {
+        "question": "Apa bahan utama dalam pembuatan kaca?",
+        "incorrect_answers": ["Plastik", "Logam", "Karet"],
+        "correct_answer": "Pasir silika"
+    },
+    {
+        "question": "Siapa yang menciptakan karakter Mickey Mouse?",
+        "incorrect_answers": ["Hanna-Barbera", "Stan Lee", "Jim Henson"],
+        "correct_answer": "Walt Disney"
+    },
+    {
+        "question": "Berapakah jumlah sisi pada segitiga?",
+        "incorrect_answers": ["4", "5", "6"],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Apa nama negara dengan jumlah penduduk terbanyak di dunia?",
+        "incorrect_answers": ["India", "Amerika Serikat", "Indonesia"],
+        "correct_answer": "China"
+    },
+    {
+        "question": "Hewan apa yang dikenal sebagai 'Raja Hutan'?",
+        "incorrect_answers": ["Harimau", "Serigala", "Cheetah"],
+        "correct_answer": "Singa"
+    },
+    {
+        "question": "Apa yang terjadi jika es mencair?",
+        "incorrect_answers": ["Menjadi gas", "Tetap padat", "Menghilang"],
+        "correct_answer": "Menjadi air"
+    },
+    {
+        "question": "Apa nama organ yang memompa darah ke seluruh tubuh?",
+        "incorrect_answers": ["Paru-paru", "Otak", "Hati"],
+        "correct_answer": "Jantung"
+    },
+    {
+        "question": "Di negara mana Taj Mahal berada?",
+        "incorrect_answers": ["Pakistan", "Bangladesh", "Sri Lanka"],
+        "correct_answer": "India"
+    },
+    {
+        "question": "Apa yang digunakan lebah untuk membuat madu?",
+        "incorrect_answers": ["Daun", "Debu", "Serbuk kayu"],
+        "correct_answer": "Nektar"
+    },
+    {
+        "question": "Siapa yang menulis buku 'Harry Potter'?",
+        "incorrect_answers": ["J.R.R. Tolkien", "Suzanne Collins", "George R.R. Martin"],
+        "correct_answer": "J.K. Rowling"
+    },
+    {
+        "question": "Apa gas utama yang ada di udara yang kita hirup?",
+        "incorrect_answers": ["Karbon dioksida", "Hidrogen", "Ozon"],
+        "correct_answer": "Nitrogen"
+    },
+    {
+        "question": "Apa nama samudra terbesar di dunia?",
+        "incorrect_answers": ["Samudra Atlantik", "Samudra Hindia", "Samudra Arktik"],
+        "correct_answer": "Samudra Pasifik"
+    },
+    {
+        "question": "Apa mata uang yang digunakan di Inggris?",
+        "incorrect_answers": ["Euro", "Dollar", "Franc"],
+        "correct_answer": "Pound Sterling"
+    }
+]
