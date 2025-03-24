@@ -11,7 +11,7 @@ Mini Quiz adalah aplikasi kuis berbasis web yang menampilkan pertanyaan secara a
 ## Cara Menggunakan
 1. Clone repository ini ke komputer Anda:
    ```sh
-   git clone https://github.com/username/repo-name.git
+   git clone https://github.com/hazelnuttty/Mini-Quiz.git
    ```
 2. Buka `index.html` di browser.
 3. Pilih bahasa yang diinginkan.
