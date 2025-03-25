@@ -196,7 +196,7 @@
     },
     {
         "question": "Perusahaan paling berkorupsi di indonesia adalah",
-        "incorrect_answers": ["PT Pertamina", "PT Timah", "Minyak Kita"],
+        "incorrect_answers": ["PT Pertamina", "PT Timah", "PT Tppi"],
         "correct_answer": "PT Antam"
     },
     {
