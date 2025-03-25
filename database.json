@@ -223,5 +223,10 @@
         "question": "Aku adalah huruf paling tengah dalam abjad, Siapakah aku?"
         "incorrect_answer": ["A, F, Z"]
         "correct_answer": "C"
+    },
+    {
+        "question": "Aplikasi media sosial yang paling banyak dipakai adalah..."
+        "incorrect_answer": ["TikTok, Instagram, Facebook"]
+        "correct_answer": "WhatSapp"
     }
 ]
