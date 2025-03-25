@@ -166,7 +166,15 @@
                 score++;
             } else {
                 element.classList.add('incorrect');
+                
+                // Tampilkan jawaban yang benar
+                let correctAnswerElement = document.createElement('p');
+                correctAnswerElement.innerText = `Correct answer: ${correct}`;
+                correctAnswerElement.style.fontSize = '18px';
+                correctAnswerElement.style.color = 'green';
+                document.getElementById('quiz').appendChild(correctAnswerElement);
             }
+            
             document.getElementById('score').innerText = `Score: ${score}`;
             document.getElementById('next').style.display = 'block';
         }
@@ -176,5 +184,5 @@
             showQuestion();
         });
      </script>
-  </body>
+</body>
 </html>
