@@ -83,102 +83,98 @@
         <div id="quiz" class="question-container"></div>
         <button id="next" style="display: none;">Next Question</button>
         <p id="score">Score: 0</p>
-    </div><script>
-    let questions = [];
-    let currentQuestionIndex = 0;
-    let score = 0;
-    let language = "en";
+    </div>
+    
+    <script>
+        let questions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let language = "en";
 
-    document.getElementById('start').addEventListener('click', async () => {
-        language = document.getElementById('language').value;
-        document.getElementById('start-screen').style.display = 'none';
-        document.getElementById('quiz-container').style.display = 'block';
-        await fetchQuestions();
-    });
+        document.getElementById('start').addEventListener('click', async () => {
+            language = document.getElementById('language').value;
+            document.getElementById('start-screen').style.display = 'none';
+            document.getElementById('quiz-container').style.display = 'block';
+            await fetchQuestions();
+        });
 
-    async function fetchQuestions() {
-        try {
+        async function fetchQuestions() {
             if (language === "id") {
-                const response = await fetch('database.json');
-                if (!response.ok) throw new Error('Failed to load questions');
+                const response = await fetch('database.json'); // Ambil data dari file JSON lokal
                 questions = await response.json();
+                
+                // Pilih 10 soal acak dari 40 soal
+                questions = questions.sort(() => Math.random() - 0.5).slice(0, 10);
             } else {
                 const response = await fetch('https://opentdb.com/api.php?amount=46&type=multiple');
-                if (!response.ok) throw new Error('Failed to load questions');
                 const data = await response.json();
                 questions = data.results.map(q => ({
                     question: decodeHTMLEntities(q.question),
                     incorrect_answers: q.incorrect_answers.map(opt => decodeHTMLEntities(opt)),
                     correct_answer: decodeHTMLEntities(q.correct_answer)
                 }));
+                
+                // Pilih 10 soal acak dari 40 soal
+                questions = questions.sort(() => Math.random() - 0.5).slice(0, 10);
             }
 
-            if (!questions.length) throw new Error('No questions available');
-            
-            questions = questions.sort(() => Math.random() - 0.5).slice(0, 10);
             currentQuestionIndex = 0;
             score = 0;
             document.getElementById('score').innerText = `Score: ${score}`;
             showQuestion();
-        } catch (error) {
-            alert('Error loading questions: ' + error.message);
-            document.getElementById('start-screen').style.display = 'block';
-            document.getElementById('quiz-container').style.display = 'none';
-        }
-    }
-
-    function decodeHTMLEntities(text) {
-        let txt = document.createElement("textarea");
-        txt.innerHTML = text;
-        return txt.value;
-    }
-
-    function showQuestion() {
-        const quizDiv = document.getElementById('quiz');
-        quizDiv.innerHTML = '';
-        document.getElementById('next').style.display = 'none';
-        
-        if (currentQuestionIndex >= questions.length) {
-            quizDiv.innerHTML = `<h2>Quiz Finished!</h2><p>Your score: ${score}/${questions.length}</p>`;
-            return;
         }
 
-        let question = questions[currentQuestionIndex];
-        let options = [...question.incorrect_answers, question.correct_answer];
-        options.sort(() => Math.random() - 0.5);
-        
-        let questionElement = document.createElement('h3');
-        questionElement.innerText = question.question;
-        quizDiv.appendChild(questionElement);
-        
-        options.forEach(option => {
-            let optionElement = document.createElement('button');
-            optionElement.innerText = option;
-            optionElement.classList.add('option');
-            optionElement.onclick = () => checkAnswer(option, question.correct_answer, optionElement);
-            quizDiv.appendChild(optionElement);
+        function decodeHTMLEntities(text) {
+            let txt = document.createElement("textarea");
+            txt.innerHTML = text;
+            return txt.value;
+        }
+
+        function showQuestion() {
+            const quizDiv = document.getElementById('quiz');
+            quizDiv.innerHTML = '';
+            document.getElementById('next').style.display = 'none';
+            
+            if (currentQuestionIndex >= questions.length) {
+                quizDiv.innerHTML = `<h2>Quiz Finished!</h2><p>Your score: ${score}/${questions.length}</p>`;
+                return;
+            }
+
+            let question = questions[currentQuestionIndex];
+            let options = [...question.incorrect_answers, question.correct_answer];
+            options.sort(() => Math.random() - 0.5);
+            
+            let questionElement = document.createElement('h3');
+            questionElement.innerText = question.question;
+            quizDiv.appendChild(questionElement);
+            
+            options.forEach(option => {
+                let optionElement = document.createElement('button');
+                optionElement.innerText = option;
+                optionElement.classList.add('option');
+                optionElement.onclick = () => checkAnswer(option, question.correct_answer, optionElement);
+                quizDiv.appendChild(optionElement);
+            });
+        }
+
+        function checkAnswer(selected, correct, element) {
+            let options = document.querySelectorAll('.option');
+            options.forEach(opt => opt.onclick = null);
+            
+            if (selected === correct) {
+                element.classList.add('correct');
+                score++;
+            } else {
+                element.classList.add('incorrect');
+            }
+            document.getElementById('score').innerText = `Score: ${score}`;
+            document.getElementById('next').style.display = 'block';
+        }
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentQuestionIndex++;
+            showQuestion();
         });
-    }
-
-    function checkAnswer(selected, correct, element) {
-        let options = document.querySelectorAll('.option');
-        options.forEach(opt => opt.onclick = null);
-        
-        if (selected === correct) {
-            element.classList.add('correct');
-            score++;
-        } else {
-            element.classList.add('incorrect');
-        }
-        document.getElementById('score').innerText = `Score: ${score}`;
-        document.getElementById('next').style.display = 'block';
-    }
-
-    document.getElementById('next').addEventListener('click', () => {
-        currentQuestionIndex++;
-        showQuestion();
-    });
- </script>
-
+     </script>
   </body>
 </html>
