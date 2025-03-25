@@ -170,36 +170,6 @@
         "correct_answer": "Jantung"
     },
     {
-        "question": "Di negara mana Taj Mahal berada?",
-        "incorrect_answers": ["Pakistan", "Bangladesh", "Sri Lanka"],
-        "correct_answer": "India"
-    },
-    {
-        "question": "Apa yang digunakan lebah untuk membuat madu?",
-        "incorrect_answers": ["Daun", "Debu", "Serbuk kayu"],
-        "correct_answer": "Nektar"
-    },
-    {
-        "question": "Siapa yang menulis buku 'Harry Potter'?",
-        "incorrect_answers": ["J.R.R. Tolkien", "Suzanne Collins", "George R.R. Martin"],
-        "correct_answer": "J.K. Rowling"
-    },
-    {
-        "question": "Apa gas utama yang ada di udara yang kita hirup?",
-        "incorrect_answers": ["Karbon dioksida", "Hidrogen", "Ozon"],
-        "correct_answer": "Nitrogen"
-    },
-    {
-        "question": "Apa nama samudra terbesar di dunia?",
-        "incorrect_answers": ["Samudra Atlantik", "Samudra Hindia", "Samudra Arktik"],
-        "correct_answer": "Samudra Pasifik"
-    },
-    {
-        "question": "Apa mata uang yang digunakan di Inggris?",
-        "incorrect_answers": ["Euro", "Dollar", "Franc"],
-        "correct_answer": "Pound Sterling"
-    },
-    {
         "question": "Aku mempunyai 4 kaki dan badan ku sangat besar, Siapakah aku?",
         "incorrect_answer": ["Cheetah", "Ikan buntal", "Bebek"],
         "correct_answer": "Gajah"
