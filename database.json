@@ -201,32 +201,32 @@
     },
     {
         "question": "Aku mempunyai 4 kaki dan badan ku sangat besar, Siapakah aku?",
-        "incorrect_answer": ["Cheetah, Ikan buntal, Bebek"],
+        "incorrect_answer": ["Cheetah", "Ikan buntal", "Bebek"],
         "correct_answer": "Gajah"
     },
     {
         "question": "Kasus korupsi terbesar di indonesia pada tahun 2025 adalah?"
-        "incorect_answer": ["Pertamina, Minyak kita, PT Timah"],
+        "incorect_answer": ["Pertamina", "Minyak kita", "PT Timah"],
         "correct_answer": "PT Antam"
     },
     {
         "question": "Domain sebuah website bisa dipakai jika kita sudah...",
-        "incorrect_answer": ["Membayar, Menyewa, Mengutang"],
+        "incorrect_answer": ["Membayar", "Menyewa", "Mengutang"],
         "correct_answer": "Membeli"
     },
     {
         "quetion": "Ini adalah pertanyaan jebakan !, 1+1 berapa hasil nya?",
-        "incorrect_answer": ["2, 3, 11"],
+        "incorrect_answer": ["2", "3", "11"],
         "correct_answer": "50"
     }, 
     {
         "question": "Aku adalah huruf paling tengah dalam abjad, Siapakah aku?",
-        "incorrect_answer": ["A, F, Z"],
+        "incorrect_answer": ["A", "F", "Z"],
         "correct_answer": "C"
     },
     {
         "question": "Aplikasi media sosial yang paling banyak dipakai adalah...",
-        "incorrect_answer": ["TikTok, Instagram, Facebook"],
+        "incorrect_answer": ["TikTok", "Instagram", "Facebook"],
         "correct_answer": "WhatSapp"
     }
 ]
