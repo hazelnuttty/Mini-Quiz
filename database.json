@@ -116,7 +116,7 @@
     },
     {
         "question": "Apa nama negara yang memiliki piramida terkenal?",
-        "incorrect_answers": ["Meksiko", "Mesir", "Yunani"],
+        "incorrect_answers": ["Meksiko", "Arab", "Yunani"],
         "correct_answer": "Mesir"
     },
     {
@@ -126,7 +126,7 @@
     },
     {
         "question": "Apa nama tim sepak bola terbesar di Inggris?",
-        "incorrect_answers": ["Chelsea", "Manchester City", "Manchester United"],
+        "incorrect_answers": ["Chelsea", "Manchester City", "Real madrid"],
         "correct_answer": "Manchester United"
     },
     {
@@ -166,28 +166,28 @@
     },
     {
         "question": "Siapa penemu pesawat terbang?",
-        "incorrect_answers": ["Thomas Edison", "Wright bersaudara", "Charles Babbage"],
+        "incorrect_answers": ["Thomas Edison", "BJ Habbie", "Charles Babbage"],
         "correct_answer": "Wright bersaudara"
     },
     {
-        "question": "Berapa hasil dari 100 + 50?",
-        "incorrect_answers": ["120", "150", "170"],
-        "correct_answer": "150"
+        "question": "Berapa hasil dari 1+1×0?",
+        "incorrect_answers": ["2", "4", "0"],
+        "correct_answer": "1"
     },
     {
-        "question": "Apa nama kota terbesar di Indonesia?",
-        "incorrect_answers": ["Surabaya", "Bandung", "Jakarta"],
-        "correct_answer": "Jakarta"
+        "question": "HTML digunakan dalam sebuah website sebagai apa?",
+        "incorrect_answers": ["Server", "Backend", "Function"],
+        "correct_answer": "Frontend"
     },
     {
-        "question": "Siapa yang menemukan listrik?",
-        "incorrect_answers": ["Nikola Tesla", "Benjamin Franklin", "Thomas Edison"],
-        "correct_answer": "Benjamin Franklin"
+        "question": "Arti gpp dalam kamu cewe arti nya adalah",
+        "incorrect_answers": ["Cemburu", "Kesel", "Dendam"],
+        "correct_answer": "Badmood"
     },
     {
-        "question": "Apa nama lautan yang mengelilingi Indonesia?",
-        "incorrect_answers": ["Laut Pasifik", "Laut Hindia", "Laut Antartika"],
-        "correct_answer": "Laut Indonesia"
+        "question": "Domain website bisa kita gunakan kalo kita sudah",
+        "incorrect_answers": ["Membayar", "Menghutang", "Menjual"],
+        "correct_answer": "Membeli"
     },
     {
         "question": "Pertanyaan jebakan !, 1+1 berapa hasil nya?",
