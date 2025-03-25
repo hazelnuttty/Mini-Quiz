@@ -102,16 +102,22 @@
             if (language === "id") {
                 const response = await fetch('database.json'); // Ambil data dari file JSON lokal
                 questions = await response.json();
+                
+                // Pilih 10 soal acak dari 40 soal
+                questions = questions.sort(() => Math.random() - 0.5).slice(0, 10);
             } else {
-                const response = await fetch('https://opentdb.com/api.php?amount=10&type=multiple');
+                const response = await fetch('https://opentdb.com/api.php?amount=40&type=multiple');
                 const data = await response.json();
                 questions = data.results.map(q => ({
                     question: decodeHTMLEntities(q.question),
                     incorrect_answers: q.incorrect_answers.map(opt => decodeHTMLEntities(opt)),
                     correct_answer: decodeHTMLEntities(q.correct_answer)
                 }));
+                
+                // Pilih 10 soal acak dari 40 soal
+                questions = questions.sort(() => Math.random() - 0.5).slice(0, 10);
             }
-            
+
             currentQuestionIndex = 0;
             score = 0;
             document.getElementById('score').innerText = `Score: ${score}`;
@@ -160,7 +166,15 @@
                 score++;
             } else {
                 element.classList.add('incorrect');
+                
+                // Tampilkan jawaban yang benar
+                let correctAnswerElement = document.createElement('p');
+                correctAnswerElement.innerText = `Correct answer: ${correct}`;
+                correctAnswerElement.style.fontSize = '18px';
+                correctAnswerElement.style.color = 'green';
+                document.getElementById('quiz').appendChild(correctAnswerElement);
             }
+            
             document.getElementById('score').innerText = `Score: ${score}`;
             document.getElementById('next').style.display = 'block';
         }
@@ -170,5 +184,5 @@
             showQuestion();
         });
      </script>
-  </body>
+</body>
 </html>
