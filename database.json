@@ -203,5 +203,20 @@
         "question": "Aplikasi media sosial paling terpopuler adalah?",
         "incorrect_answers": ["Facebook", "Instagram", "TikTok"],
         "correct_answer": "WhatSapp"
+    },
+    {
+      "quetion": "Kapan proklamasi kemerdekaan indonesia dibacakan",
+      "incorrect_answers": ["17 Agustus 1946", "17 Agustus 1947", "17 Agustus 1948"],
+      "correct_answer": "17 Agustus 1945"
+    },
+    {
+      "question": "Kapan perang dunia ke II berakhir",
+      "incorrect_answers": ["1947", "1944", "1943"],
+      "correct_answer": "1945"
+    },
+    {
+      "question": "Siapa yang menjadi gubernur jendral hindia belanda terakhir",
+      "incorrect_answers": ["A.H.J. Lovink", "L.J.M. Beel", "A.H.Colijn"],
+      "correct_answer": "H.J. Van Mook"
     }
 ]
