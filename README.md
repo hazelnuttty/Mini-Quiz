@@ -39,6 +39,16 @@ Jika ingin menambahkan lebih banyak pertanyaan dalam bahasa Indonesia:
    ```
 3. Simpan perubahan dan jalankan kembali kuis.
 
+## Link deploy
+1. netlify.app
+   ```sh
+   https://my-quiz-ai.netlify.app/
+   ```
+2. github.io
+   ```sh
+   https://hazelnuttty.github.io/Mini-Quiz/
+   ```
+
 ## Kontribusi
 Jika ingin berkontribusi:
 1. Fork repository ini.
