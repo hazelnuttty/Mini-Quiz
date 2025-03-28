@@ -103,7 +103,7 @@
             
             questions = questions.sort(() => Math.random() - 0.5).slice(0, 10);
         } else {
-            const response = await fetch('https://opentdb.com/api.php?amount=150&type=multiple');
+            const response = await fetch('https://opentdb.com/api.php?amount=1500&type=multiple');
             const data = await response.json();
             questions = data.results.map(q => ({
                 question: decodeHTMLEntities(q.question),
